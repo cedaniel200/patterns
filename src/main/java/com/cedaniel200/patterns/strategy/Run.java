@@ -11,19 +11,19 @@ public class Run {
 
     private static void showFormationTactic451() {
         SoccerBoard soccerBoard = new SoccerBoard();
-        soccerBoard.useFootballFormationTactic451();
+        soccerBoard.useSoccerFormationTactic451();
         soccerBoard.paintFormation();
     }
 
     private static void showFormationTactic442() {
         SoccerBoard soccerBoard = new SoccerBoard();
-        soccerBoard.useFootballFormationTactic442();
+        soccerBoard.useSoccerFormationTactic442();
         soccerBoard.paintFormation();
     }
 
     private static void showFormationTactic433() {
         SoccerBoard soccerBoard = new SoccerBoard();
-        soccerBoard.setFormationTactic(new FootballFormationTactic433());
+        soccerBoard.setFormationTactic(new SoccerFormationTactic433());
         soccerBoard.paintFormation();
     }
 

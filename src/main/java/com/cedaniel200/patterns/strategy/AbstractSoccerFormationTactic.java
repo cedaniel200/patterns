@@ -5,7 +5,7 @@ import java.util.List;
 
 import static java.util.stream.Collectors.toList;
 
-public abstract class AbstractFootballFormationTactic implements FootballFormationTactic{
+public abstract class AbstractSoccerFormationTactic implements SoccerFormationTactic {
 
     private static final int MAX_POSITIONS = 9;
 

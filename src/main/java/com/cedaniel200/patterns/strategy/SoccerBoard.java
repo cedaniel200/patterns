@@ -2,34 +2,34 @@ package com.cedaniel200.patterns.strategy;
 
 public class SoccerBoard {
 
-    FootballFormationTactic formationTactic;
+    SoccerFormationTactic formationTactic;
 
     public SoccerBoard() {
-        this(new FootballFormationTactic442());
+        this(new SoccerFormationTactic442());
     }
 
-    public SoccerBoard(FootballFormationTactic formationTactic) {
+    public SoccerBoard(SoccerFormationTactic formationTactic) {
         this.formationTactic = formationTactic;
     }
 
-    public void useFootballFormationTactic442(){
-        setFormationTactic(new FootballFormationTactic442());
+    public void useSoccerFormationTactic442(){
+        setFormationTactic(new SoccerFormationTactic442());
     }
 
-    public void useFootballFormationTactic451(){
-        setFormationTactic(new FootballFormationTactic451());
+    public void useSoccerFormationTactic451(){
+        setFormationTactic(new SoccerFormationTactic451());
     }
 
-    public void setFormationTactic(FootballFormationTactic formationTactic) {
+    public void setFormationTactic(SoccerFormationTactic formationTactic) {
         this.formationTactic = formationTactic;
     }
 
-    public FootballFormationTactic getFormationTactic() {
+    public SoccerFormationTactic getFormationTactic() {
         return formationTactic;
     }
 
     public void paintFormation(){
-        FootballFormationTactic formationTactic = getFormationTactic();
+        SoccerFormationTactic formationTactic = getFormationTactic();
         if(formationTactic != null){
            formationTactic.paint();
         }

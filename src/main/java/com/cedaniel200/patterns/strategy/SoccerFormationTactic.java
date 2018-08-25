@@ -1,5 +1,5 @@
 package com.cedaniel200.patterns.strategy;
 
-public interface FootballFormationTactic {
+public interface SoccerFormationTactic {
     void paint();
 }
