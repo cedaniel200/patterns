@@ -1,6 +1,6 @@
-package com.cedaniel200.patterns.builder.inheritance;
+package com.cedaniel200.patterns.creational.builder.inheritance;
 
-import com.cedaniel200.patterns.builder.Builder;
+import com.cedaniel200.patterns.creational.builder.Builder;
 
 public class PersonBuilder <T extends PersonBuilder<T>> implements Builder<Person>  {
 

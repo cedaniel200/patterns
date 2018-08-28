@@ -1,6 +1,6 @@
-package com.cedaniel200.patterns.builder.simple;
+package com.cedaniel200.patterns.creational.builder.simple;
 
-import static com.cedaniel200.patterns.builder.simple.BurgerBuilder.burger;
+import static com.cedaniel200.patterns.creational.builder.simple.BurgerBuilder.burger;
 
 public class Run {
 

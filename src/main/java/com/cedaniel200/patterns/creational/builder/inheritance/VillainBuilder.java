@@ -1,4 +1,4 @@
-package com.cedaniel200.patterns.builder.inheritance;
+package com.cedaniel200.patterns.creational.builder.inheritance;
 
 import java.util.ArrayList;
 import java.util.List;

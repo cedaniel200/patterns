@@ -1,4 +1,4 @@
-package com.cedaniel200.patterns.strategy;
+package com.cedaniel200.patterns.behavioral.strategy;
 
 public class SoccerBoard {
 

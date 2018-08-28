@@ -1,8 +1,8 @@
-package com.cedaniel200.patterns.builder.inheritance;
+package com.cedaniel200.patterns.creational.builder.inheritance;
 
-import static com.cedaniel200.patterns.builder.inheritance.PersonBuilder.person;
-import static com.cedaniel200.patterns.builder.inheritance.SuperHeroBuilder.superHero;
-import static com.cedaniel200.patterns.builder.inheritance.VillainBuilder.villain;
+import static com.cedaniel200.patterns.creational.builder.inheritance.PersonBuilder.person;
+import static com.cedaniel200.patterns.creational.builder.inheritance.SuperHeroBuilder.superHero;
+import static com.cedaniel200.patterns.creational.builder.inheritance.VillainBuilder.villain;
 
 public class Run {
 

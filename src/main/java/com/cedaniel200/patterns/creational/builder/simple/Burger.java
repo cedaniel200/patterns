@@ -1,4 +1,4 @@
-package com.cedaniel200.patterns.builder.simple;
+package com.cedaniel200.patterns.creational.builder.simple;
 
 public class Burger {
 

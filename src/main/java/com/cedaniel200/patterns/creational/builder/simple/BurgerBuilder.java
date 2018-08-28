@@ -1,6 +1,6 @@
-package com.cedaniel200.patterns.builder.simple;
+package com.cedaniel200.patterns.creational.builder.simple;
 
-import com.cedaniel200.patterns.builder.Builder;
+import com.cedaniel200.patterns.creational.builder.Builder;
 
 public class BurgerBuilder implements Builder<Burger> {
 
