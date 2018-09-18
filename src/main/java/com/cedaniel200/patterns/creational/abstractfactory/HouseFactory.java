@@ -6,10 +6,6 @@ import com.cedaniel200.patterns.creational.abstractfactory.model.Walls;
 
 public interface HouseFactory {
 
-    static void print(String character){
-        System.out.println(character);
-    }
-
     Roof buildRoof();
     Walls buildWalls();
     Floor buildFloor();

@@ -4,26 +4,26 @@ import com.cedaniel200.patterns.creational.abstractfactory.model.Floor;
 import com.cedaniel200.patterns.creational.abstractfactory.model.Roof;
 import com.cedaniel200.patterns.creational.abstractfactory.model.Walls;
 
-import static com.cedaniel200.patterns.creational.abstractfactory.HouseFactory.print;
+import static com.cedaniel200.patterns.creational.abstractfactory.model.Drawable.print;
 
 public class StoneHouseFactory implements HouseFactory {
 
     @Override
     public Roof buildRoof() {
-        return new Roof( () -> { print(" ****** "); } );
+        return () -> print(" ****** ");
     }
 
     @Override
     public Walls buildWalls() {
-        return new Walls( () -> {
+        return () -> {
             print(" *    * ");
             print(" * ** * ");
             print(" * ** * ");
-        } );
+        };
     }
 
     @Override
     public Floor buildFloor() {
-        return new Floor( () -> { print("********"); } );
+        return () -> print("********");
     }
 }
