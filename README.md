@@ -4,11 +4,15 @@ This repository contains the implementation of the following patterns:
 #### Creational
 * Abstract Factory
 * Builder
+* Factory Method
+* Prototype
+* Singleton
 
 #### Behavioral
 * Strategy
 
 #### Structural
+* Adapter
 
 ## Notes
 
