@@ -2,13 +2,12 @@ package com.cedaniel200.patterns.creational.builder.simple;
 
 import static com.cedaniel200.patterns.creational.builder.simple.BurgerBuilder.burger;
 
-public class Run {
+public class Director {
 
     public static void main(String[] args) {
         burgerByDefault();
         burgerExample();
         yourBurger();
-
     }
 
     private static void yourBurger() {

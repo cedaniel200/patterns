@@ -1,97 +1,62 @@
 package com.cedaniel200.patterns.creational.builder.simple;
 
-import com.cedaniel200.patterns.creational.builder.Builder;
+public class BurgerBuilder extends AbstractBurgerBuilder {
 
-public class BurgerBuilder implements Builder<Burger> {
+    private Burger burger;
 
-    private boolean hasLettuce;
-    private boolean hasBeef;
-    private boolean hasPork;
-    private boolean hasChicken;
-    private int amountTomato;
-    private int amountOnion;
-    private int amountSlicesOfCheese;
-
-    public BurgerBuilder() {
-        this.hasLettuce = false;
-        this.hasBeef = false;
-        this.hasPork = false;
-        this.hasChicken = false;
-        this.amountTomato = 0;
-        this.amountOnion = 0;
-        this.amountSlicesOfCheese = 0;
+    private BurgerBuilder() {
+        this.burger = new Burger();
     }
 
     public static BurgerBuilder burger(){
         return new BurgerBuilder();
     }
 
+    @Override
     public BurgerBuilder withLettuce(){
-        this.hasLettuce = true;
+        this.burger.setHasLettuce(true);
         return this;
     }
 
+    @Override
     public BurgerBuilder withBeef(){
-        this.hasBeef = true;
+        this.burger.setHasBeef(true);
         return this;
     }
 
+    @Override
     public BurgerBuilder withPork(){
-        this.hasPork = true;
+        this.burger.setHasPork(true);
         return this;
     }
 
+    @Override
     public BurgerBuilder withChicken(){
-        this.hasChicken = true;
+        this.burger.setHasChicken(true);
         return this;
     }
 
+    @Override
     public BurgerBuilder addTomato(int amount){
-        this.amountTomato = amount;
+        this.burger.setAmountTomato(amount);
         return this;
     }
 
+    @Override
     public BurgerBuilder addOnion(int amount){
-        this.amountOnion = amount;
+        this.burger.setAmountOnion(amount);
         return this;
     }
 
+    @Override
     public BurgerBuilder addSlicesOfCheese(int amount){
-        this.amountSlicesOfCheese = amount;
+        this.burger.setAmountSlicesOfCheese(amount);
         return this;
-    }
-
-    public boolean hasLettuce() {
-        return hasLettuce;
-    }
-
-    public boolean hasBeef() {
-        return hasBeef;
-    }
-
-    public boolean hasPork() {
-        return hasPork;
-    }
-
-    public boolean isHasChicken() {
-        return hasChicken;
-    }
-
-    public int getAmountTomato() {
-        return amountTomato;
-    }
-
-    public int getAmountOnion() {
-        return amountOnion;
-    }
-
-    public int getAmountSlicesOfCheese() {
-        return amountSlicesOfCheese;
     }
 
     @Override
     public Burger build() {
-        return new Burger(this);
+        return this.burger;
     }
 
 }
