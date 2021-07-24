@@ -11,7 +11,7 @@ public class Director {
     }
 
     private static void yourBurger() {
-        // TODO Create your hamburger to your liking
+        // TODO Create your burger to your liking
     }
 
     private static void burgerByDefault() {
@@ -30,7 +30,7 @@ public class Director {
     }
 
     private static void showBurger(String message, Burger burger) {
-        System.out.println(message + "\n" + burger.toString());
+        System.out.println("\n" + message + "\n" + burger.toString());
     }
 
 }
