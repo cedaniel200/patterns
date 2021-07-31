@@ -2,18 +2,24 @@ package com.cedaniel200.patterns.behavioral.strategy;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.IntStream;
 
 import static java.util.stream.Collectors.toList;
 
 public abstract class SoccerTacticalFormation {
 
     private static final int MAX_POSITIONS = 9;
+    public static final String DEFAULT_CHARACTER = "*";
 
-    protected void paintPlayers(int... positions){
-        List<Integer> positionsPlayers = Arrays.stream(positions).boxed().collect(toList());
-        for (int i = MAX_POSITIONS; i >= 1 ; i --){
-            System.out.print(positionsPlayers.contains(i) ? "*" : " ");
-        }
+    protected void paintPlayers(Integer... positions) {
+        paintPlayers(DEFAULT_CHARACTER, positions);
+    }
+
+    protected void paintPlayers(String character, Integer... positions){
+        List<Integer> positionsPlayers = Arrays.asList(positions);
+        IntStream.rangeClosed(1, 9).boxed()
+                .map(c -> positionsPlayers.contains(c) ? character : " ")
+                .forEach(System.out::print);
         System.out.print("\n");
     }
 

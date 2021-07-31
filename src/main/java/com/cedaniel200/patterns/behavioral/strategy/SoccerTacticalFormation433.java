@@ -9,10 +9,10 @@ public class SoccerTacticalFormation433 extends SoccerTacticalFormation {
 
     @Override
     public void paint() {
-        paintPlayers(5);
+        paintPlayers(3, 5, 7);
+        paintPlayers(3, 5, 7);
         paintPlayers(1, 4, 6, 9);
-        paintPlayers(3, 5, 7);
-        paintPlayers(3, 5, 7);
+        paintPlayers("#", 5);
     }
 
 }
