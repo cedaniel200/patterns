@@ -8,7 +8,8 @@ import static java.util.stream.Collectors.toList;
 
 public abstract class SoccerTacticalFormation {
 
-    private static final int MAX_POSITIONS = 9;
+    public static final int MIN_POSITIONS = 1;
+    public static final int MAX_POSITIONS = 9;
     public static final String DEFAULT_CHARACTER = "*";
 
     protected void paintPlayers(Integer... positions) {
@@ -17,8 +18,8 @@ public abstract class SoccerTacticalFormation {
 
     protected void paintPlayers(String character, Integer... positions){
         List<Integer> positionsPlayers = Arrays.asList(positions);
-        IntStream.rangeClosed(1, MAX_POSITIONS).boxed()
-                .map(c -> positionsPlayers.contains(c) ? character : " ")
+        IntStream.rangeClosed(MIN_POSITIONS, MAX_POSITIONS).boxed()
+                .map(positionOnTheBoard -> positionsPlayers.contains(positionOnTheBoard) ? character : " ")
                 .forEach(System.out::print);
         System.out.print("\n");
     }
