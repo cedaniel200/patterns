@@ -17,7 +17,7 @@ public abstract class SoccerTacticalFormation {
 
     protected void paintPlayers(String character, Integer... positions){
         List<Integer> positionsPlayers = Arrays.asList(positions);
-        IntStream.rangeClosed(1, 9).boxed()
+        IntStream.rangeClosed(1, MAX_POSITIONS).boxed()
                 .map(c -> positionsPlayers.contains(c) ? character : " ")
                 .forEach(System.out::print);
         System.out.print("\n");
