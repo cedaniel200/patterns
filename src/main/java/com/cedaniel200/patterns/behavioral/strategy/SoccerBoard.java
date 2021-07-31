@@ -2,37 +2,44 @@ package com.cedaniel200.patterns.behavioral.strategy;
 
 public class SoccerBoard {
 
-    SoccerFormationTactic formationTactic;
+    public static final String TITLE_FORMAT = "Soccer tactical Formation %s\n";
+
+    private SoccerTacticalFormation tacticalFormation;
 
     public SoccerBoard() {
-        this(new SoccerFormationTactic442());
+        this(new SoccerTacticalFormation442());
     }
 
-    public SoccerBoard(SoccerFormationTactic formationTactic) {
-        this.formationTactic = formationTactic;
+    public SoccerBoard(SoccerTacticalFormation tacticalFormation) {
+        this.tacticalFormation = tacticalFormation;
     }
 
-    public void useSoccerFormationTactic442(){
-        setFormationTactic(new SoccerFormationTactic442());
+    public void useSoccerTacticalFormation442() {
+        setTacticalFormation(new SoccerTacticalFormation442());
     }
 
-    public void useSoccerFormationTactic451(){
-        setFormationTactic(new SoccerFormationTactic451());
+    public void useSoccerTacticalFormation451() {
+        setTacticalFormation(new SoccerTacticalFormation451());
     }
 
-    public void setFormationTactic(SoccerFormationTactic formationTactic) {
-        this.formationTactic = formationTactic;
+    public void setTacticalFormation(SoccerTacticalFormation tacticalFormation) {
+        this.tacticalFormation = tacticalFormation;
     }
 
-    public SoccerFormationTactic getFormationTactic() {
-        return formationTactic;
+    public SoccerTacticalFormation getTacticalFormation() {
+        return tacticalFormation;
     }
 
-    public void paintFormation(){
-        SoccerFormationTactic formationTactic = getFormationTactic();
-        if(formationTactic != null){
-           formationTactic.paint();
-        }
+    public void paintTacticalFormation() {
+        validateTacticalFormation();
+        System.out.printf(TITLE_FORMAT, this.tacticalFormation.getName());
+        System.out.println("---------");
+        this.tacticalFormation.paint();
+        System.out.println("---------\n");
     }
 
+    private void validateTacticalFormation() {
+        if (this.tacticalFormation == null)
+            throw new IllegalStateException("It is necessary to set a soccer tactical formation");
+    }
 }

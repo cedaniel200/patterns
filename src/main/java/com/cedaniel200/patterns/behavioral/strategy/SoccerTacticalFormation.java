@@ -5,22 +5,19 @@ import java.util.List;
 
 import static java.util.stream.Collectors.toList;
 
-public abstract class AbstractSoccerFormationTactic implements SoccerFormationTactic {
+public abstract class SoccerTacticalFormation {
 
     private static final int MAX_POSITIONS = 9;
 
     protected void paintPlayers(int... positions){
         List<Integer> positionsPlayers = Arrays.stream(positions).boxed().collect(toList());
-        for (int i = 1; i <= MAX_POSITIONS; i ++){
+        for (int i = MAX_POSITIONS; i >= 1 ; i --){
             System.out.print(positionsPlayers.contains(i) ? "*" : " ");
         }
-        System.out.println("");
+        System.out.print("\n");
     }
 
-    protected void paintMessage(String message){
-        System.out.println(message);
-    }
+    public abstract String getName();
 
-    @Override
     public abstract void paint();
 }

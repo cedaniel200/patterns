@@ -3,32 +3,32 @@ package com.cedaniel200.patterns.behavioral.strategy;
 public class Run {
 
     public static void main(String[] args) {
-        showFormationTactic451();
-        showFormationTactic442();
-        showFormationTactic433();
-        showYourFormationTactic();
+        showSoccerTacticalFormation451();
+        showSoccerTacticalFormation442();
+        showSoccerTacticalFormation433();
+        showYourSoccerTacticalFormation();
     }
 
-    private static void showFormationTactic451() {
+    private static void showSoccerTacticalFormation451() {
         SoccerBoard soccerBoard = new SoccerBoard();
-        soccerBoard.useSoccerFormationTactic451();
-        soccerBoard.paintFormation();
+        soccerBoard.useSoccerTacticalFormation451();
+        soccerBoard.paintTacticalFormation();
     }
 
-    private static void showFormationTactic442() {
+    private static void showSoccerTacticalFormation442() {
         SoccerBoard soccerBoard = new SoccerBoard();
-        soccerBoard.useSoccerFormationTactic442();
-        soccerBoard.paintFormation();
+        soccerBoard.useSoccerTacticalFormation442();
+        soccerBoard.paintTacticalFormation();
     }
 
-    private static void showFormationTactic433() {
+    private static void showSoccerTacticalFormation433() {
         SoccerBoard soccerBoard = new SoccerBoard();
-        soccerBoard.setFormationTactic(new SoccerFormationTactic433());
-        soccerBoard.paintFormation();
+        soccerBoard.setTacticalFormation(new SoccerTacticalFormation433());
+        soccerBoard.paintTacticalFormation();
     }
 
-    private static void showYourFormationTactic() {
-        // TODO create your soccer formation tactic
+    private static void showYourSoccerTacticalFormation() {
+        // TODO create your soccer tactical formation
     }
 
 }
