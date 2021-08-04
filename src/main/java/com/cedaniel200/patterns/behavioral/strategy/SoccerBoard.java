@@ -3,14 +3,13 @@ package com.cedaniel200.patterns.behavioral.strategy;
 public class SoccerBoard {
 
     public static final String TITLE_FORMAT = "Soccer tactical Formation %s\n";
-
-    private SoccerTacticalFormation tacticalFormation;
+    private SoccerTacticalFormationStrategy tacticalFormation;
 
     public SoccerBoard() {
         this(new SoccerTacticalFormation442());
     }
 
-    public SoccerBoard(SoccerTacticalFormation tacticalFormation) {
+    public SoccerBoard(SoccerTacticalFormationStrategy tacticalFormation) {
         this.tacticalFormation = tacticalFormation;
     }
 
@@ -22,11 +21,11 @@ public class SoccerBoard {
         setTacticalFormation(new SoccerTacticalFormation451());
     }
 
-    public void setTacticalFormation(SoccerTacticalFormation tacticalFormation) {
+    public void setTacticalFormation(SoccerTacticalFormationStrategy tacticalFormation) {
         this.tacticalFormation = tacticalFormation;
     }
 
-    public SoccerTacticalFormation getTacticalFormation() {
+    public SoccerTacticalFormationStrategy getTacticalFormation() {
         return tacticalFormation;
     }
 

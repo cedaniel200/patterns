@@ -1,6 +1,6 @@
 package com.cedaniel200.patterns.behavioral.strategy;
 
-public class SoccerTacticalFormation433 extends SoccerTacticalFormation {
+public class SoccerTacticalFormation433 extends SoccerTacticalFormationStrategy {
 
     @Override
     public String getName() {

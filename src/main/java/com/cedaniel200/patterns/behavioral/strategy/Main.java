@@ -1,6 +1,6 @@
 package com.cedaniel200.patterns.behavioral.strategy;
 
-public class Run {
+public class Main {
 
     public static void main(String[] args) {
         showSoccerTacticalFormation451();
@@ -17,7 +17,6 @@ public class Run {
 
     private static void showSoccerTacticalFormation442() {
         SoccerBoard soccerBoard = new SoccerBoard();
-        soccerBoard.useSoccerTacticalFormation442();
         soccerBoard.paintTacticalFormation();
     }
 
