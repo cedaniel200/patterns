@@ -6,8 +6,7 @@
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue?style=flat-square)](LICENSE)
 
 Implementaciones mínimas de patrones de diseño en Java. Cada patrón vive en su propio paquete, con un
-ejemplo pequeño y ejecutable en lugar de teoría: la clase `Run` (o `Main` en Strategy) imprime el
-resultado por consola.
+ejemplo pequeño y ejecutable en lugar de teoría: una clase `Main` imprime el resultado por consola.
 
 ## Patrones incluidos
 
@@ -50,20 +49,19 @@ Requiere JDK 21; el wrapper descarga Gradle 9.6.1.
 java -cp build/classes/java/main com.cedaniel200.patterns.behavioral.strategy.Main
 ```
 
-Cada ejemplo tiene su propio punto de entrada. La clase se llama `Run` en casi todos los paquetes;
-las excepciones son `behavioral.strategy.Main` y `creational.builder.simple.Director`:
+Cada ejemplo tiene su propio punto de entrada, siempre una clase `Main`:
 
 | Patrón | Clase |
 |---|---|
 | Strategy | `behavioral.strategy.Main` |
-| Abstract Factory | `creational.abstractfactory.Run` |
-| Builder (simple) | `creational.builder.simple.Director` |
-| Builder (herencia) | `creational.builder.inheritance.Run` |
-| Factory Method | `creational.factorymethod.Run` |
-| Prototype | `creational.prototype.Run` |
-| Singleton | `creational.singleton.Run` |
-| Adapter (clase) | `structural.adapter.clase.Run` |
-| Adapter (objeto) | `structural.adapter.objeto.Run` |
+| Abstract Factory | `creational.abstractfactory.Main` |
+| Builder (simple) | `creational.builder.simple.Main` |
+| Builder (herencia) | `creational.builder.inheritance.Main` |
+| Factory Method | `creational.factorymethod.Main` |
+| Prototype | `creational.prototype.Main` |
+| Singleton | `creational.singleton.Main` |
+| Adapter (clase) | `structural.adapter.clase.Main` |
+| Adapter (objeto) | `structural.adapter.objeto.Main` |
 
 También puedes abrir el proyecto en IntelliJ IDEA o VS Code y ejecutar la clase desde el IDE.
 
