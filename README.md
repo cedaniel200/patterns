@@ -50,12 +50,14 @@ Requiere JDK 21; el wrapper descarga Gradle 9.6.1.
 java -cp build/classes/java/main com.cedaniel200.patterns.behavioral.strategy.Main
 ```
 
-Cada ejemplo tiene su propio punto de entrada:
+Cada ejemplo tiene su propio punto de entrada. La clase se llama `Run` en casi todos los paquetes;
+las excepciones son `behavioral.strategy.Main` y `creational.builder.simple.Director`:
 
 | Patrón | Clase |
 |---|---|
 | Strategy | `behavioral.strategy.Main` |
 | Abstract Factory | `creational.abstractfactory.Run` |
+| Builder (simple) | `creational.builder.simple.Director` |
 | Builder (herencia) | `creational.builder.inheritance.Run` |
 | Factory Method | `creational.factorymethod.Run` |
 | Prototype | `creational.prototype.Run` |
