@@ -2,7 +2,7 @@ package com.cedaniel200.patterns.creational.builder.simple;
 
 import static com.cedaniel200.patterns.creational.builder.simple.BurgerBuilder.burger;
 
-public class Director {
+public class Main {
 
     public static void main(String[] args) {
         burgerByDefault();

@@ -4,7 +4,7 @@ import static com.cedaniel200.patterns.creational.builder.inheritance.PersonBuil
 import static com.cedaniel200.patterns.creational.builder.inheritance.SuperHeroBuilder.superHero;
 import static com.cedaniel200.patterns.creational.builder.inheritance.VillainBuilder.villain;
 
-public class Run {
+public class Main {
 
     public static void main(String[] args) {
         exampleOfPerson();

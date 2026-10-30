@@ -1,6 +1,6 @@
 package com.cedaniel200.patterns.creational.abstractfactory;
 
-public class Run {
+public class Main {
 
     public static void main(String[] args) {
         BuildingCompany buildingCompany = new BuildingCompany();
