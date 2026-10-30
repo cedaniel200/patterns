@@ -1,12 +1,13 @@
-package com.cedaniel200.patterns.structural.adapter.objeto;
+package com.cedaniel200.patterns.structural.adapter.clase;
 
-public class Run {
+public class Main {
     public static void main(String[] args) {
         adapterClase();
     }
 
     private static void adapterClase() {
-        InstrumentoPercusion instrumento = new OllaTamborAdapter(new OllaPresion());
+        InstrumentoPercusion instrumento = new OllaTamborAdapter();
         instrumento.golpear().sonar();
     }
+
 }

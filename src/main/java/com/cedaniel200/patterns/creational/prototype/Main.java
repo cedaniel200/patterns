@@ -7,7 +7,7 @@ import static com.cedaniel200.patterns.creational.prototype.TypeFurniture.CHAIR;
 import static com.cedaniel200.patterns.creational.prototype.TypeFurniture.COUCH;
 import static com.cedaniel200.patterns.creational.prototype.TypeFurniture.TEA_TABLE;
 
-public class Run {
+public class Main {
 
     public static void main(String[] args) throws CloneNotSupportedException {
         Map<TypeFurniture, Furniture> furnitureMap = new HashMap<>();
